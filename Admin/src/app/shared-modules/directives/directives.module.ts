@@ -8,6 +8,7 @@ import { CpfCnpjFormatDirective } from './cpf-cnpj-format.directive';
   imports: [
     CommonModule
   ],
-  declarations: [CpfFormatDirective, CnpjFormatDirective, CpfCnpjFormatDirective]
+  declarations: [CpfFormatDirective, CnpjFormatDirective, CpfCnpjFormatDirective],
+  exports:[CpfFormatDirective, CnpjFormatDirective, CpfCnpjFormatDirective]
 })
 export class DirectivesModule { }

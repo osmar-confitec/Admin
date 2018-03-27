@@ -3,12 +3,15 @@ import { CpfFormatPipe } from '../pipes/cpf-format.pipe';
 import { CnpjFormatPipe } from '../pipes/cnpj-format.pipe';
 
 @Directive({
-  selector: '[projetoAdminCpfCnpjFormat]'
+  selector: '[projetoAdminCpfCnpjFormat]',
+  providers:[CnpjFormatPipe,CpfFormatPipe]
 })
 export class CpfCnpjFormatDirective {
 
   private el: HTMLInputElement;
   private valorFormatado: string;
+  private cnpjFormatPipe: CnpjFormatPipe = new CnpjFormatPipe();
+  private cpfFormatPipe: CpfFormatPipe   = new CpfFormatPipe();
 
 
   ngOnInit() {
@@ -25,8 +28,7 @@ export class CpfCnpjFormatDirective {
   }
 
   constructor(
-    private cnpjFormatPipe: CnpjFormatPipe,
-    private cpfFormatPipe: CpfFormatPipe,
+  
     private renderer: Renderer,
     private elementRef: ElementRef) {
     this.el = this.elementRef.nativeElement;

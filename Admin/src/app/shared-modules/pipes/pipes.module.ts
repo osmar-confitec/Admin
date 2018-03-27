@@ -8,6 +8,7 @@ import { CpfCnpjFormatPipe } from './cpf-cnpj-format.pipe';
   imports: [
     CommonModule
   ],
-  declarations: [CnpjFormatPipe, CpfFormatPipe, CpfCnpjFormatPipe]
+  declarations: [CnpjFormatPipe, CpfFormatPipe, CpfCnpjFormatPipe],
+  exports:[CnpjFormatPipe, CpfFormatPipe, CpfCnpjFormatPipe]
 })
 export class PipesModule { }

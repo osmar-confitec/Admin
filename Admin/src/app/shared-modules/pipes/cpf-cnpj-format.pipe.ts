@@ -4,14 +4,15 @@ import { CpfFormatPipe } from './cpf-format.pipe';
 
 @Pipe({
   name: 'cpfCnpjFormat'
+  
 })
 export class CpfCnpjFormatPipe implements PipeTransform {
 
 
-  cnpjFormatPipe: CnpjFormatPipe = new CnpjFormatPipe();
-
-  constructor(private cpf: CpfFormatPipe
-    , private cnpj: CnpjFormatPipe) {
+  private cpf: CpfFormatPipe  = new CpfFormatPipe();
+  private cnpj: CnpjFormatPipe = new CnpjFormatPipe();
+  constructor(
+    ) {
 
   }
 

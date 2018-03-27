@@ -7,7 +7,7 @@ import { CpfFormatPipe } from '../pipes/cpf-format.pipe';
 export class CpfFormatDirective {
   private el: HTMLInputElement;
   private valorFormatado: string;
-
+  private cpfFormatPipe: CpfFormatPipe = new CpfFormatPipe();
 
   ngOnInit() {
     this.renderer.listen(this.elementRef.nativeElement, 'keyup', (event) => {
@@ -19,7 +19,7 @@ export class CpfFormatDirective {
   }
 
 
-  constructor(private cpfFormatPipe: CpfFormatPipe,
+  constructor(
     private renderer: Renderer,
     private elementRef: ElementRef) {
     this.el = this.elementRef.nativeElement;

@@ -2,7 +2,8 @@ import { Directive, Renderer, ElementRef } from '@angular/core';
 import { CnpjFormatPipe } from '../pipes/cnpj-format.pipe';
 
 @Directive({
-  selector: 'input[type="text"][projetoAdminCnpjFormat]'
+  selector: 'input[type="text"][projetoAdminCnpjFormat]',
+  providers:[CnpjFormatPipe]
 })
 export class CnpjFormatDirective {
   private el: HTMLInputElement;

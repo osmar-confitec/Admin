@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  CPFCNPJ:string = '21371885893';
+
   constructor() { }
 
   ngOnInit() {
