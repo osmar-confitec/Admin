@@ -1,9 +1,9 @@
 import { Directive } from '@angular/core';
 
 @Directive({
-  selector: '[projetoAdminFormataCpf]'
+  selector: '[projetoAdminCnpjFormat]'
 })
-export class FormataCpfDirective {
+export class CnpjFormatDirective {
 
   constructor() { }
 
