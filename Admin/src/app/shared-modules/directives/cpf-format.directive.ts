@@ -11,8 +11,10 @@ export class CpfFormatDirective {
 
   ngOnInit() {
     this.renderer.listen(this.elementRef.nativeElement, 'keyup', (event) => {
-      this.valorFormatado = this.cpfFormatPipe.transform(this.elementRef.nativeElement.value);
-      this.renderer.setElementProperty(this.elementRef.nativeElement, 'value', this.valorFormatado);
+      if (this.elementRef.nativeElement.value !== undefined) {
+        this.valorFormatado = this.cpfFormatPipe.transform(this.elementRef.nativeElement.value);
+        this.renderer.setElementProperty(this.elementRef.nativeElement, 'value', this.valorFormatado);
+      }
     });
   }
 
