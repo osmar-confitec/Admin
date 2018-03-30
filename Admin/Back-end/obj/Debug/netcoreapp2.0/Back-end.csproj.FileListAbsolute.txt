@@ -1,0 +1,10 @@
+E:\FontesAngular\Admin\Admin\Back-end\bin\Debug\netcoreapp2.0\Back-end.deps.json
+E:\FontesAngular\Admin\Admin\Back-end\bin\Debug\netcoreapp2.0\Back-end.runtimeconfig.json
+E:\FontesAngular\Admin\Admin\Back-end\bin\Debug\netcoreapp2.0\Back-end.runtimeconfig.dev.json
+E:\FontesAngular\Admin\Admin\Back-end\bin\Debug\netcoreapp2.0\Back-end.dll
+E:\FontesAngular\Admin\Admin\Back-end\bin\Debug\netcoreapp2.0\Back-end.pdb
+E:\FontesAngular\Admin\Admin\Back-end\obj\Debug\netcoreapp2.0\Back-end.csproj.CoreCompileInputs.cache
+E:\FontesAngular\Admin\Admin\Back-end\obj\Debug\netcoreapp2.0\Back-end.AssemblyInfoInputs.cache
+E:\FontesAngular\Admin\Admin\Back-end\obj\Debug\netcoreapp2.0\Back-end.AssemblyInfo.cs
+E:\FontesAngular\Admin\Admin\Back-end\obj\Debug\netcoreapp2.0\Back-end.dll
+E:\FontesAngular\Admin\Admin\Back-end\obj\Debug\netcoreapp2.0\Back-end.pdb
