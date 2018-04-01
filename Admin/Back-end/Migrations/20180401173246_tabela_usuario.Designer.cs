@@ -11,9 +11,10 @@ using System;
 namespace Backend.Migrations
 {
     [DbContext(typeof(ContextBco))]
-    partial class ContextBcoModelSnapshot : ModelSnapshot
+    [Migration("20180401173246_tabela_usuario")]
+    partial class tabela_usuario
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
