@@ -21,6 +21,12 @@ namespace Back_end.EntityMap
                 builder.Property(x=>x.Sobrenome)
                .HasColumnName("Sobrenome")
                .HasColumnType("varchar(100)");
+
+                // One to many
+                
+                builder.HasOne<Usuario>(s => s.Usuario)
+                    .WithOne(ad => ad.Pessoa)
+                    .HasForeignKey<Usuario>(ad => ad.PessoaId);
                
         }
     }

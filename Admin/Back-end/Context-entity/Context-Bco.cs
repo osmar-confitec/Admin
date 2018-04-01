@@ -9,6 +9,7 @@ namespace Back_end.Context_entity
     {
 
         public DbSet<Pessoa> Pessoas { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
         public ContextBco(DbContextOptions<ContextBco> options) : base(options)
         {
 
@@ -16,7 +17,8 @@ namespace Back_end.Context_entity
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-               modelBuilder.ApplyConfiguration(new PessoaMap());
+            modelBuilder.ApplyConfiguration(new PessoaMap());
+            modelBuilder.ApplyConfiguration(new UsuarioMap());
         }
     }
 }
